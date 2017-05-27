@@ -14,7 +14,6 @@ function increaseRankBy(n){
   var lis = document.querySelectorAll(".ranked-list");
   var first = lis[0];
   var second = lis[1];
-  var start = 1;
 
   var children = first.children;
 
@@ -24,7 +23,6 @@ function increaseRankBy(n){
   }
 
   children = second.children;
-  start = 12;
 
   for (var i = 0; i< children.length; i++){
     children[i].innerHTML = parseInt(children[i].innerHTML) + n;
